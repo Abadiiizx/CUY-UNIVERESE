@@ -1,0 +1,101 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    
+}
+
+/* NAVBAR */
+.container-navbar {
+    background-color: #4c586f;
+    width: 100%;
+}
+
+.ul-navbar {
+    display: flex;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.li-navbar {
+    list-style-type: none;
+    padding: 10px;
+    margin: 35px;
+    font-size: 14px;
+}
+
+.li-navbar:hover {
+    background-color: #3E3E3B;
+    transition: .0,5s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 8px;
+}
+
+.a-navbar {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 800;
+}
+/* DATA JS */
+#biodata {
+    width: 100px;
+    height: 50px;
+}
+
+/* CONTENT */
+.container-content {
+    background-color: #3E3E3B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.a-content {
+    width: 270px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cbc5c1;
+    color: #102444;
+    text-decoration: none;
+    font-size: 20px;
+    flex-direction: column;
+    margin: 35px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 5px 0px #111;
+-webkit-box-shadow: 10px 10px 5px 0px #111;
+-moz-box-shadow: 10px 10px 5px 0px #111;
+}
+.a-content:hover{
+    background-color: #fff;
+    transition: .0,5s ease-in-out;
+    transition-delay: .2s;
+    border-radius: 50px;
+    
+}
+
+.img-content {
+    width: 100px;
+    height: 100px;
+}
+/* FOOTER */
+.container-footer {
+    height: 10vh;
+    background-color: #4c586f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f5f5f5;
+    font-size: 12px;
+}
+
+.h1-footer {
+    
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+    <title>TUGAS SESI-4 SAKLAR</title>
+</head>
+
+<body>
+    <!-- grup 1 -->
+    <div class="bg-black text-center">
+        <p class="text-white">RUANG KELUARGA</p>
+    </div>
+    <div class="flex justify-center items-center w-50 p-2
+    bg-black gap-4">
+        <label for="default-toggle11" class="inline-flex relative items-center
+        cursor-pointer">
+            <input type="checkbox" id="default-toggle11" class="sr-only
+          peer" onchange="saklar1()">
+            <div class="w-10 h-4 bg-gray-200 peer-focus:outline-none
+          peer-focus:ring-4 peer-focus:ring-blue-300
+          dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
+          peer-checked:after:translate-x-full peer-checked:after:border-white
+          after:content-[''] after:absolute after:top-[1px] after:left-[1px]
+          after:bg-white after:border-gray-300 after:border after:rounded-full
+          after:h-4 after:w-5 after:transition-all dark:border-gray-600
+          peer-checked:bg-blue-600"></div>
+        </label>
+    </div>
+    <div class="flex justify-center items-center w-50 p-2
+    bg-black gap-4">
+        <!-- lampu 1 -->
+        <div class="w-10">
+            <img src="assets/Images/off.gif" alt="" id="lampu1" class="w-12" />
+
+            <label for="default-toggle1" class="inline-flex relative items-center
+            cursor-pointer">
+                <input type="checkbox" id="default-toggle1" class="sr-only
+              peer" onchange="saklar()">
+                <div class="w-10 h-4 bg-gray-200 peer-focus:outline-none
+              peer-focus:ring-4 peer-focus:ring-blue-300
+              dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
+              peer-checked:after:translate-x-full peer-checked:after:border-white
+              after:content-[''] after:absolute after:top-[1px] after:left-[1px]
+              after:bg-white after:border-gray-300 after:border after:rounded-full
+              after:h-4 after:w-5 after:transition-all dark:border-gray-600
+              peer-checked:bg-blue-600"></div>
+            </label>
+        </div>
+        <!-- lampu 2 -->
+        <div class="w-10">
+            <img src="assets/Images/off.gif" alt="" id="lampu2" class="w-12" />
+
+            <label for="default-toggle2" class="inline-flex relative items-center
+            cursor-pointer">
+                <input type="checkbox" id="default-toggle2" class="sr-only
+              peer" onchange="saklar()">
+                <div class="w-10 h-4 bg-gray-200 peer-focus:outline-none
+              peer-focus:ring-4 peer-focus:ring-blue-300
+              dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
+              peer-checked:after:translate-x-full peer-checked:after:border-white
+              after:content-[''] after:absolute after:top-[1px] after:left-[1px]
+              after:bg-white after:border-gray-300 after:border after:rounded-full
+              after:h-4 after:w-5 after:transition-all dark:border-gray-600
+              peer-checked:bg-blue-600"></div>
+            </label>
+        </div>
+        <!-- lampu 3 -->
+        <div class="w-10">
+            <img src="assets/Images/off.gif" alt="" id="lampu3" class="w-12" />
+
+            <label for="default-toggle3" class="inline-flex relative items-center
+            cursor-pointer">
+                <input type="checkbox" id="default-toggle3" class="sr-only
+              peer" onchange="saklar()">
+                <div class="w-10 h-4 bg-gray-200 peer-focus:outline-none
+              peer-focus:ring-4 peer-focus:ring-blue-300
+              dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
+              peer-checked:after:translate-x-full peer-checked:after:border-white
+              after:content-[''] after:absolute after:top-[1px] after:left-[1px]
+              after:bg-white after:border-gray-300 after:border after:rounded-full
+              after:h-4 after:w-5 after:transition-all dark:border-gray-600
+              peer-checked:bg-blue-600"></div>
+            </label>
+        </div>
+
+    </div>
+
+    <!-- grup 2 -->
+    <div class="bg-black text-center mt-1">
+        <p class="text-white">RUANG MAKAN</p>
+    </div>
+    <div class="flex justify-center items-center w-50 p-2
+    bg-black gap-4">
+      <label for="default-toggle12" class="inline-flex relative items-center
+      cursor-pointer">
+          <input type="checkbox" id="default-toggle12" class="sr-only
+        peer" onchange="saklar2()">
+          <div class="w-10 h-4 bg-gray-200 peer-focus:outline-none
+        peer-focus:ring-4 peer-focus:ring-blue-300
+        dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
+        peer-checked:after:translate-x-full peer-checked:after:border-white
+        after:content-[''] after:absolute after:top-[1px] after:left-[1px]
+        after:bg-white after:border-gray-300 after:border after:rounded-full
+        after:h-4 after:w-5 after:transition-all dark:border-gray-600
+        peer-checked:bg-blue-600"></div>
+      </label>
+  </div>
+    <div class="flex justify-center items-center w-50 p-2
+    bg-black gap-4">
+        <!-- lampu 4 -->
+        <div class="w-10">
+            <img src="assets/Images/off.gif" alt="" id="lampu4" class="w-12" />
+
+            <label for="default-toggle4" class="inline-flex relative items-center
+            cursor-pointer">
+                <input type="checkbox" id="default-toggle4" class="sr-only
+              peer" onchange="saklar()">
+                <div class="w-10 h-4 bg-gray-200 peer-focus:outline-none
+              peer-focus:ring-4 peer-focus:ring-blue-300
+              dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
+              peer-checked:after:translate-x-full peer-checked:after:border-white
+              after:content-[''] after:absolute after:top-[1px] after:left-[1px]
+              after:bg-white after:border-gray-300 after:border after:rounded-full
+              after:h-4 after:w-5 after:transition-all dark:border-gray-600
+              peer-checked:bg-blue-600"></div>
+            </label>
+        </div>
+
+    </div>
+
+    <!-- grup 3 -->
+    <div class="bg-black text-center mt-1">
+        <p class="text-white">RUANG TIDUR</p>
+    </div>
+    <div class="flex justify-center items-center w-50 p-2
+    bg-black gap-4">
+      <label for="default-toggle13" class="inline-flex relative items-center
+      cursor-pointer">
+          <input type="checkbox" id="default-toggle13" class="sr-only
+        peer" onchange="saklar3()">
+          <div class="w-10 h-4 bg-gray-200 peer-focus:outline-none
+        peer-focus:ring-4 peer-focus:ring-blue-300
+        dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
+        peer-checked:after:translate-x-full peer-checked:after:border-white
+        after:content-[''] after:absolute after:top-[1px] after:left-[1px]
+        after:bg-white after:border-gray-300 after:border after:rounded-full
+        after:h-4 after:w-5 after:transition-all dark:border-gray-600
+        peer-checked:bg-blue-600"></div>
+      </label>
+  </div>
+    <div class="flex justify-center items-center w-50 p-2
+        bg-black gap-4">
+        <!-- lampu 5 -->
+        <div class="w-10">
+            <img src="assets/Images/off.gif" alt="" id="lampu5" class="w-12" />
+
+            <label for="default-toggle5" class="inline-flex relative items-center
+                cursor-pointer">
+                <input type="checkbox" id="default-toggle5" class="sr-only
+                  peer" onchange="saklar()">
+                <div class="w-10 h-4 bg-gray-200 peer-focus:outline-none
+                  peer-focus:ring-4 peer-focus:ring-blue-300
+                  dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
+                  peer-checked:after:translate-x-full peer-checked:after:border-white
+                  after:content-[''] after:absolute after:top-[1px] after:left-[1px]
+                  after:bg-white after:border-gray-300 after:border after:rounded-full
+                  after:h-4 after:w-5 after:transition-all dark:border-gray-600
+                  peer-checked:bg-blue-600"></div>
+            </label>
+        </div>
+        <!-- lampu 6 -->
+        <div class="w-10">
+            <img src="assets/Images/off.gif" alt="" id="lampu6" class="w-12" />
+
+            <label for="default-toggle6" class="inline-flex relative items-center
+                cursor-pointer">
+                <input type="checkbox" id="default-toggle6" class="sr-only
+                  peer" onchange="saklar()">
+                <div class="w-10 h-4 bg-gray-200 peer-focus:outline-none
+                  peer-focus:ring-4 peer-focus:ring-blue-300
+                  dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
+                  peer-checked:after:translate-x-full peer-checked:after:border-white
+                  after:content-[''] after:absolute after:top-[1px] after:left-[1px]
+                  after:bg-white after:border-gray-300 after:border after:rounded-full
+                  after:h-4 after:w-5 after:transition-all dark:border-gray-600
+                  peer-checked:bg-blue-600"></div>
+            </label>
+        </div>
+
+    </div>
+
+    <!-- grup 4 -->
+    <div class="bg-black text-center mt-1">
+        <p class="text-white">RUANG TAMU</p>
+    </div>
+    <div class="flex justify-center items-center w-50 p-2
+    bg-black gap-4">
+      <label for="default-toggle14" class="inline-flex relative items-center
+      cursor-pointer">
+          <input type="checkbox" id="default-toggle14" class="sr-only
+        peer" onchange="saklar4()">
+          <div class="w-10 h-4 bg-gray-200 peer-focus:outline-none
+        peer-focus:ring-4 peer-focus:ring-blue-300
+        dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
+        peer-checked:after:translate-x-full peer-checked:after:border-white
+        after:content-[''] after:absolute after:top-[1px] after:left-[1px]
+        after:bg-white after:border-gray-300 after:border after:rounded-full
+        after:h-4 after:w-5 after:transition-all dark:border-gray-600
+        peer-checked:bg-blue-600"></div>
+      </label>
+  </div>
+    <div class="flex justify-center items-center w-50 p-2
+    bg-black gap-4">
+        <!-- lampu 7 -->
+        <div class="w-10">
+            <img src="assets/Images/off.gif" alt="" id="lampu7" class="w-12" />
+
+            <label for="default-toggle7" class="inline-flex relative items-center
+            cursor-pointer">
+                <input type="checkbox" id="default-toggle7" class="sr-only
+              peer" onchange="saklar()">
+                <div class="w-10 h-4 bg-gray-200 peer-focus:outline-none
+              peer-focus:ring-4 peer-focus:ring-blue-300
+              dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
+              peer-checked:after:translate-x-full peer-checked:after:border-white
+              after:content-[''] after:absolute after:top-[1px] after:left-[1px]
+              after:bg-white after:border-gray-300 after:border after:rounded-full
+              after:h-4 after:w-5 after:transition-all dark:border-gray-600
+              peer-checked:bg-blue-600"></div>
+            </label>
+        </div>
+        <!-- lampu 8 -->
+        <div class="w-10">
+            <img src="assets/Images/off.gif" alt="" id="lampu8" class="w-12" />
+
+            <label for="default-toggle8" class="inline-flex relative items-center
+            cursor-pointer">
+                <input type="checkbox" id="default-toggle8" class="sr-only
+              peer" onchange="saklar()">
+                <div class="w-10 h-4 bg-gray-200 peer-focus:outline-none
+              peer-focus:ring-4 peer-focus:ring-blue-300
+              dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
+              peer-checked:after:translate-x-full peer-checked:after:border-white
+              after:content-[''] after:absolute after:top-[1px] after:left-[1px]
+              after:bg-white after:border-gray-300 after:border after:rounded-full
+              after:h-4 after:w-5 after:transition-all dark:border-gray-600
+              peer-checked:bg-blue-600"></div>
+            </label>
+        </div>
+        <!-- lampu 9 -->
+        <div class="w-10">
+            <img src="assets/Images/off.gif" alt="" id="lampu9" class="w-12" />
+
+            <label for="default-toggle9" class="inline-flex relative items-center
+            cursor-pointer">
+                <input type="checkbox" id="default-toggle9" class="sr-only
+              peer" onchange="saklar()">
+                <div class="w-10 h-4 bg-gray-200 peer-focus:outline-none
+              peer-focus:ring-4 peer-focus:ring-blue-300
+              dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
+              peer-checked:after:translate-x-full peer-checked:after:border-white
+              after:content-[''] after:absolute after:top-[1px] after:left-[1px]
+              after:bg-white after:border-gray-300 after:border after:rounded-full
+              after:h-4 after:w-5 after:transition-all dark:border-gray-600
+              peer-checked:bg-blue-600"></div>
+            </label>
+        </div>
+        <!-- lampu 10 -->
+        <div class="w-10">
+            <img src="assets/Images/off.gif" alt="" id="lampu10" class="w-12" />
+
+            <label for="default-toggle10" class="inline-flex relative items-center
+                cursor-pointer">
+                <input type="checkbox" id="default-toggle10" class="sr-only
+                  peer" onchange="saklar()">
+                <div class="w-10 h-4 bg-gray-200 peer-focus:outline-none
+                  peer-focus:ring-4 peer-focus:ring-blue-300
+                  dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
+                  peer-checked:after:translate-x-full peer-checked:after:border-white
+                  after:content-[''] after:absolute after:top-[1px] after:left-[1px]
+                  after:bg-white after:border-gray-300 after:border after:rounded-full
+                  after:h-4 after:w-5 after:transition-all dark:border-gray-600
+                  peer-checked:bg-blue-600"></div>
+            </label>
+        </div>
+
+    </div>
+
+
+    <!-- script js -->
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+    <script src="saklar.js" type="application/javascript"></script>
+</body>
+
+</html>
