@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SESI 5 - abadiiizx</title>
+</head>
+
+<body>
+    <div id="root">
+        <div>
+            <h3 id="login">LOGIN</h3>
+        </div>
+        <div>
+            <input type=text placeholder="username" id="usernameInput" />
+            <p id="alertUsername"></p>
+            <input type=password placeholder="password" id="passwordInput" />
+            <p id="alertPassword"></p>
+            <button onclick="onLogin()" id="loginButton">
+                <a>Login</a>
+            </button>
+        </div>
+        <div>
+            <label id="daftar" for="terms">Belum punya akun?
+                <a href="daftar.html">Daftar</a></label>
+        </div>
+
+        <div>
+            <h1 id="selamat">SELAMAT DATANG DI DASHBOARD</h1>
+            <h1 id="admin">ANDA LOGIN SEBAGAI ADMIN</h1>
+            <h1 id="basic">ANDA LOGIN USER BIASA</h1>
+        </div>
+        <div>
+            <button onclick="onLogout()" id="logoutButton">
+                <a>Logout</a>
+            </button>
+        </div>
+    </div>
+
+
+    <script src="script.js" type="application/javascript">
+    </script>
+
+</body>
+
+</html>
