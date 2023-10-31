@@ -1,0 +1,16 @@
+{
+  "name": "sesi-7",
+  "version": "1.0.0",
+  "description": "sesi 7 cuy university backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Abadiiizx",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.1",
+    "rupiah-format": "^1.0.0"
+  }
+}
