@@ -1,0 +1,129 @@
+*, html, 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    background-color: #111;
+    color: #fff;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar-top {
+    width: 100%;
+    height: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: border, color;
+    animation-timeline: scroll();
+    transform-origin: 0%;
+}
+
+.bar-bottom {
+    width: 100%;
+    height: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    animation: border, color;
+    animation-timeline: scroll();
+    transform-origin: 100%;
+}
+
+@keyframes border {
+    0% {
+    transform: scaleX(0);
+    }
+    100% {
+    transform: scaleX(1);
+    }
+}
+
+.bar-left {
+    width: 5px;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    animation: vertical, color;
+    animation-timeline: scroll();
+    transform-origin: 0 100%;
+}
+
+.bar-right{
+    width: 5px;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    animation: vertical, color;
+    animation-timeline: scroll();
+    transform-origin: 0 0%;
+}
+
+@keyframes vertical{
+    0% {
+    transform: scaleY(0);
+    }
+    100% {
+    transform: scaleY(1);
+    }
+}
+
+@keyframes color {
+    0% {
+    background-color: tomato;
+    }
+    25% {
+        background-color: darkorchid;
+    }
+    50% {
+        background-color: gold;
+    }
+    75% {
+        background-color: deeppink;
+    }
+    100% {
+    background-color: aqua;
+    }
+}
+
+.content {
+    border: 1px solid white;
+    border-radius: 8px;
+}
+.content h1 {
+    padding: 5px;
+    border-radius: 5px;
+}
+.content :hover {
+    background-color: white;
+    color: black;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.content2 {
+    border: 1px solid aqua;
+    border-radius: 8px;
+}
+.content2 h1 {
+    padding: 5px;
+    border-radius: 5px;
+}
+.content2 :hover {
+    background-color: aqua;
+    color: black;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USIA GENERATOR</title>
+    <style>
+        html,
+        body,
+        :root {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            margin: 0 auto;
+            width: 500px;
+            padding: 16px;
+            gap: 10px;
+        }
+
+        .container h2 {
+            text-align: center;
+        }
+
+        label {
+            font-size: 18px;
+        }
+
+        .result {
+            font-size: 18px;
+            color: red;
+            margin-top: 10px;
+        }
+
+        #birthday {
+            font-size: 16px;
+            padding: 18px;
+        }
+
+        #btn {
+            padding: 12px;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        #btn:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>CEK USIA ANDA</h2>
+        <label>masukan tahun kelahiran anda:</label>
+        <input type="number" placeholder="contoh: 1945" id="birthday" />
+        <button id="btn" onclick="btnResult()">CEK USIA</button>
+        <p class="result" id="resultView"></p>
+    </div>
+
+    <script>
+        const birthdayInput = document.getElementById("birthday")
+        const resultView = document.getElementById("resultView")
+        
+        function btnResult() {
+            const birthday = birthdayInput.value;
+            const now = new Date().getFullYear();
+            const age = now - birthday 
+            resultView.innerHTML = "Usia anda saat ini " + age
+        }
+
+
+    </script>
+</body>
+
+</html>
